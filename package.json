@@ -1,0 +1,17 @@
+{
+  "name": "galaxy-surfers",
+  "version": "0.1.0",
+  "description": "Typescript port of galaxy surfer",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && npx serve ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "serve": "^14.1.2"
+  }
+}

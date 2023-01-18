@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galaxy Surfers</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+      }
+
+      body,
+      html {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <audio
+      id="music-aurora"
+      src="./assets/aurora.mp3"
+      style="display: none"
+    ></audio>
+    <audio
+      id="music-punisher"
+      src="./assets/punisher.mp3"
+      style="display: none"
+    ></audio>
+    <img
+      id="environment_background_1"
+      src="./assets/environment_background_1.png"
+      alt=""
+      style="display: none"
+    />
+    <img
+      id="collectable_1"
+      src="./assets/collectable_1.png"
+      alt=""
+      style="display: none"
+    />
+    <img
+      id="super_collectable_1"
+      src="./assets/super_collectable_1.png"
+      alt=""
+      style="display: none"
+    />
+    <img
+      id="enemy_plane_1"
+      src="./assets/enemy_plane_1.png"
+      alt=""
+      style="display: none"
+    />
+    <img
+      id="meteor_1"
+      src="./assets/meteor_1.png"
+      alt=""
+      style="display: none"
+    />
+    <img
+      id="super_enemy_plane_1"
+      src="./assets/super_enemy_plane_1.png"
+      alt=""
+      style="display: none"
+    />
+    <img
+      id="player_plane_1"
+      ,
+      src="./assets/player_plane_1.png"
+      ,
+      alt=""
+      ,
+      style="display: none"
+    />
+    <script>
+      addEventListener("click", function () {
+        var el = document.documentElement,
+          rfs =
+            el.requestFullScreen ||
+            el.webkitRequestFullScreen ||
+            el.mozRequestFullScreen;
+        rfs.call(el);
+      });
+    </script>
+    <script type="module" src="./dist/app.js"></script>
+    <noscript>You need to enable javascript to run the game.</noscript>
+  </body>
+</html>
